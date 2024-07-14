@@ -41,7 +41,7 @@ def visualize_data():
             size=50,
             color='white',
             family='Arial',
-            weight='bold'  # Make the title bold
+            bold=True  # Make the title bold
         ),
         title_x=0.5,
         title_y=0.935,

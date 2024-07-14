@@ -22,33 +22,23 @@ def visualize_data():
     fig = px.treemap(df, path=['name'], values='dailyRevenue',
                      color='dailyRevenue', hover_data=['dailyRevenue'],
                      color_continuous_scale=['#14F195', '#9945FF'],
-                     title='Top Solana Protocols by Daily Revenue | July 14, 2024')
+                     title='Top Solana Protocols by Daily Revenue')
 
     fig.update_traces(
         textinfo="label+text+value",
         texttemplate="<b>%{label}</b><br>$%{value:,}",
-        textfont_size=25,
-        textposition='middle center',
-        marker=dict(line=dict(color='#000000', width=0)),
-        textfont=dict(color='white')
+        textfont_size=14,
+        marker=dict(line=dict(color='#000000', width=0))
     )
 
     fig.update_layout(
-        title_font_size=50,
+        title_font_size=20,
         title_font_color='white',
-        title_font_family='Arial',  # You can specify the font family
-        title_font=dict(
-            size=50,
-            color='white',
-            family='Arial',
-            weight='bold'  # Make the title bold
-        ),
         title_x=0.5,
-        title_y=0.935,
-        paper_bgcolor='#444444',
-        plot_bgcolor='#444444',
+        paper_bgcolor='black',
+        plot_bgcolor='black',
         font=dict(size=14, color='white')
-)
+    )
 
     fig.show()
     

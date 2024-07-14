@@ -33,21 +33,21 @@ def visualize_data():
         textfont=dict(color='white')
     )
 
-    fig.update_layout(
-        title_font_size=50,
-        title_font_color='white',
-        title_font_family='Arial',  # You can specify the font family
-        title_font=dict(
-            size=50,
-            color='white',
-            family='Arial',
-            weight='bold'  # Make the title bold
-        ),
-        title_x=0.5,
-        title_y=0.935,
-        paper_bgcolor='#444444',
-        plot_bgcolor='#444444',
-        font=dict(size=14, color='white')
+fig.update_layout(
+    title_font_size=50,
+    title_font_color='white',
+    title_font_family='Arial',  # You can specify the font family
+    title_font=dict(
+        size=50,
+        color='white',
+        family='Arial',
+        bold=True  # Make the title bold
+    ),
+    title_x=0.5,
+    title_y=0.935,
+    paper_bgcolor='#444444',
+    plot_bgcolor='#444444',
+    font=dict(size=14, color='white')
 )
 
     fig.show()

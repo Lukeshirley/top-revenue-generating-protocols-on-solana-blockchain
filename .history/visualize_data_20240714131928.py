@@ -27,28 +27,20 @@ def visualize_data():
     fig.update_traces(
         textinfo="label+text+value",
         texttemplate="<b>%{label}</b><br>$%{value:,}",
-        textfont_size=25,
-        textposition='middle center',
-        marker=dict(line=dict(color='#000000', width=0)),
-        textfont=dict(color='white')
+        textfont_size=14,
+        marker=dict(line=dict(color='#000000', width=0))
     )
 
     fig.update_layout(
         title_font_size=50,
         title_font_color='white',
-        title_font_family='Arial',  # You can specify the font family
-        title_font=dict(
-            size=50,
-            color='white',
-            family='Arial',
-            weight='bold'  # Make the title bold
-        ),
         title_x=0.5,
         title_y=0.935,
+        margin=dict(t=80, l=20, r=20, b=20),  # Adjust margins to create a border effect
         paper_bgcolor='#444444',
         plot_bgcolor='#444444',
         font=dict(size=14, color='white')
-)
+    )
 
     fig.show()
     
@@ -59,6 +51,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
